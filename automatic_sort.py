@@ -16,6 +16,11 @@ PATH = '/home/nace/Downloads/'
 koncnice = [['.txt', '.docx', '.dcx', '.pdf'], ['.jpg', '.png', '.jpeg'], ['.mp3']]
 downloads_folder = os.listdir("/home/nace/Downloads")
 
+downloads_folder.remove('documents')
+downloads_folder.remove('pictures')
+downloads_folder.remove('music')
+downloads_folder.remove('other')
+
 for datoteka in downloads_folder:
     for ext in koncnice[0]:
         if ext in str(datoteka):
