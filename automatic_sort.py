@@ -13,7 +13,7 @@ other = list()
 
 PATH = '/home/nace/Downloads/'
 
-koncnice = [['.txt', '.docx', '.dcx', '.pdf'], ['.jpg', '.png', '.jpeg'], ['.mp3']]
+koncnice = [['.txt', '.docx', '.dcx', '.pdf', '.doc'], ['.jpg', '.png', '.jpeg'], ['.mp3']]
 downloads_folder = os.listdir("/home/nace/Downloads")
 
 downloads_folder.remove('documents')
