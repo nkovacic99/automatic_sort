@@ -21,7 +21,6 @@ downloads_folder = os.listdir("/home/omen/Downloads")
 downloads_folder.remove('documents')
 downloads_folder.remove('pictures')
 downloads_folder.remove('music')
-downloads_folder.remove('movies')
 downloads_folder.remove('other')
 
 for datoteka in downloads_folder:
