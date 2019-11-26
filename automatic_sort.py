@@ -10,27 +10,33 @@ documents = list()
 pictures = list()
 music = list()
 other = list()
+movies = list()
 
-PATH = '/home/nace/Downloads/'
+PATH = '/home/omen/Downloads/'
 
-koncnice = [['.txt', '.docx', '.dcx', '.pdf', '.doc'], ['.jpg', '.png', '.jpeg'], ['.mp3']]
-downloads_folder = os.listdir("/home/nace/Downloads")
+iskalne_zahteve = [['.txt', '.docx', '.dcx', '.pdf', '.doc'], ['.jpg', '.png', '.jpeg'], ['.mp3'], ['.mkv', '.mp4', '1080p', '720p']]
+downloads_folder = os.listdir("/home/omen/Downloads")
+
 
 downloads_folder.remove('documents')
 downloads_folder.remove('pictures')
 downloads_folder.remove('music')
+downloads_folder.remove('movies')
 downloads_folder.remove('other')
 
 for datoteka in downloads_folder:
-    for ext in koncnice[0]:
+    for ext in iskalne_zahteve[0]:
         if ext in str(datoteka):
             documents.append(datoteka)
-    for ext in koncnice[1]:
+    for ext in iskalne_zahteve[1]:
         if ext in str(datoteka):
             pictures.append(datoteka)
-    for ext in koncnice[2]:
+    for ext in iskalne_zahteve[2]:
         if ext in str(datoteka):
             music.append(datoteka)
+    for ext in iskalne_zahteve[3]:
+        if ext in str(datoteka):
+            movies.append(datoteka)
     if datoteka not in documents or datoteka not in pictures or datoteka not in music:
         other.append(datoteka)
 
