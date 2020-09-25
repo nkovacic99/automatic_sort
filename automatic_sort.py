@@ -12,10 +12,10 @@ music = list()
 other = list()
 movies = list()
 
-PATH = '/home/omen/Downloads/'
+PATH = '/home/nace/Downloads/'
 
 iskalne_zahteve = [['.txt', '.docx', '.dcx', '.pdf', '.doc'], ['.jpg', '.png', '.jpeg'], ['.mp3'], ['.mkv', '.mp4', '1080p', '720p']]
-downloads_folder = os.listdir("/home/omen/Downloads")
+downloads_folder = os.listdir("/home/nace/Downloads")
 
 
 downloads_folder.remove('documents')
